@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo — pratik/pratik</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; line-height: 1.5; }
+    .card { padding: 1rem; border: 1px solid #ddd; border-radius: 8px; max-width: 600px; }
+    button { padding: .5rem 1rem; margin-top: 1rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>HTML Demo</h1>
+  <div class="card">
+    <p id="msg">Hello — this is a demo file inside the repo.</p>
+    <button id="btn">Click me</button>
+  </div>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', () => {
+      const p = document.getElementById('msg');
+      p.textContent = 'You clicked the button — demo works!';
+    });
+  </script>
+</body>
+</html>
